@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "Bee_token_backend": {
+      "main": "src/Bee_token_backend/main.mo",
+      "type": "motoko"
+    },
+    "Bee_token_frontend": {
+      "dependencies": [
+        "Bee_token_backend"
+      ],
+      "source": [
+        "src/Bee_token_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "Bee_token_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
